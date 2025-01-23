@@ -7,9 +7,10 @@ export default {
         custom: ["Roboto Slab", "serif"],
       },
       colors: {
-        "nav-grey": "linear-gradient(180deg, #FFF 0%, #DFDFDF 29.17%, #000 99.98%, #EF0690 99.99%, rgba(255, 0, 138, 0.00) 100%);",
+        "nav-grey":
+          "linear-gradient(180deg, #FFF 0%, #DFDFDF 29.17%, #000 99.98%, #EF0690 99.99%, rgba(255, 0, 138, 0.00) 100%);",
       },
     },
   },
-  plugins: [],
+  plugins: [require("tailwind-scrollbar"), require("tailwind-scrollbar-hide")],
 };
