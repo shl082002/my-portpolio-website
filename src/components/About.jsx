@@ -1,26 +1,26 @@
 import React from "react";
-import about_img from "../assets/about-image.svg";
+import about_img from "../assets/about-image2.png";
 import Skills from "./Skills";
 
 export default function About() {
   return (
     <>
-      <header className="flex items-center justify-center py-[2rem]">
+      <div className="flex items-center justify-center py-[2rem]">
         <div className="flex items-center w-full">
           <hr className="flex-1 border-dashed border-2 mx-6" />
           <span className="text-white text-[2.5rem]">About Me</span>
           <hr className="flex-1 border-dashed border-2 mx-6" />
         </div>
-      </header>
-      <main className="grid grid-cols-2">
+      </div>
+      <div className="grid grid-cols-2">
         {/* left-section */}
-        <section>
+        <div>
           <div className="flex justify-center items-center w-full h-full">
-            <img src={about_img} alt="Profile" className="w-[80%]" />
+            <img src={about_img} alt="Profile" className="w-[90%]" />
           </div>
-        </section>
+        </div>
         {/* right-section */}
-        <section className="px-[2rem] flex justify-center items-center">
+        <div className="px-[2rem] flex justify-center items-center">
           <div className="text-[1.5rem] tracking-wider text-white">
             Greetings! I'm Sahil Verma, an undergraduate fellow hailing from a
             quaint village in the Jalaun district of Uttar Pradesh. Born into a
@@ -40,8 +40,8 @@ export default function About() {
             and discovering more. Join me on this journey as I aspire to
             contribute my bit to the ever-evolving world of technology.
           </div>
-        </section>
-      </main>
+        </div>
+      </div>
     </>
   );
 }

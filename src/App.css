@@ -1,20 +1,11 @@
 * {
-  /* background-color: #151515; */
-  background-color: #12121c;
-}
-
-.home-text {
-  background: linear-gradient(
-    180deg,
-    #fff 0%,
-    #dfdfdf 29.17%,
-    #000 99.98%,
-    #ef0690 99.99%,
-    rgba(255, 0, 138, 0)
-  );
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  font-size: 36px;
-  font-weight: bold;
+  background-image: url("./assets/background2.jpg");
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  font-family: "Josefin Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
 }

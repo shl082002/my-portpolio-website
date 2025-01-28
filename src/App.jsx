@@ -10,16 +10,26 @@ import Contact from "./components/Contact";
 function App() {
   return (
     <>
-      <body className="w-full h-screen">
+      <div className="w-full h-screen">
         <Navbar />
-        <main className="w-full h-[90vh] overflow-y-scroll scrollbar-hide">
-          <Home />
-          <About />
-          <Skills />
-          <Work />
-          <Contact />
-        </main>
-      </body>
+        <div className="w-full h-[90vh] overflow-y-scroll scrollbar-hide">
+          <div id="home" className="snap-start">
+            <Home />
+          </div>
+          <div id="about" className="snap-start">
+            <About />
+          </div>
+          <div id="skills" className="snap-start">
+            <Skills />
+          </div>
+          <div id="work" className="snap-start">
+            <Work />
+          </div>
+          <div id="contact" className="snap-start">
+            <Contact />
+          </div>
+        </div>
+      </div>
     </>
   );
 }
