@@ -58,7 +58,7 @@ export default function () {
         </div>
       </div>
       <div className="flex justify-center items-center">
-        <div className="grid grid-cols-7 gap-x-[3.5rem] gap-y-[5rem] py-[2rem]">
+        <div className="grid grid-cols-7 gap-x-[3.5rem] gap-y-[5rem] py-[2rem] px-[2rem]">
           {skills.map((skill, index) => (
             <SkillCard
               key={index}

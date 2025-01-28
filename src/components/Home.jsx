@@ -20,7 +20,7 @@ export default function Home() {
       <div className="flex flex-col">
         {/* Introduction-text */}
         <motion.div
-          className="px-[5rem] pt-[5rem] flex justify-center items-start flex-col"
+          className="pl-[5rem] pt-[5rem] flex justify-center items-start flex-col"
           initial={{ opacity: 0, y: 50 }} // Starting state: transparent and slightly below its position
           animate={{ opacity: 1, y: 0 }} // Ending state: fully visible and in place
           exit={{ opacity: 0, y: -50 }} // Exit state: fade out and slide upward
@@ -30,8 +30,8 @@ export default function Home() {
             ease: [0.25, 0.1, 0.25, 1], // Easing function (smooth effect)
           }}
         >
-          <p className="text-white font-semibold text-[5rem]">Hi,</p>
-          <p className="text-[#20d1f5] font-bold text-[5rem]">
+          <p className="text-white font-semibold text-[3.5rem]">Hi,</p>
+          <p className="text-[#20d1f5] font-bold text-[3.5rem]">
             I'm Sahil Verma
           </p>
           <p className="text-[3rem] text-white">
@@ -104,7 +104,7 @@ export default function Home() {
           <img
             src={profile_pic4}
             alt="Profile"
-            className="w-[81%] mt-[2rem] mr-[3rem]"
+            className="w-[80%] mt-[2rem] mr-[3rem]"
           />
         </motion.div>
       </div>
