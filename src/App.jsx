@@ -10,7 +10,7 @@ import Contact from "./components/Contact";
 function App() {
   return (
     <>
-      <div className="w-full h-screen">
+      <div className="main-container w-full h-screen">
         <Navbar />
         <div className="w-full h-[90vh] overflow-y-scroll scrollbar-hide">
           <div id="home" className="snap-start">
@@ -19,15 +19,12 @@ function App() {
           <div id="about" className="snap-start">
             <About />
           </div>
-          <div id="skills" className="snap-start">
-            <Skills />
-          </div>
           <div id="work" className="snap-start">
             <Work />
           </div>
-          <div id="contact" className="snap-start">
+          {/* <div id="contact" className="snap-start">
             <Contact />
-          </div>
+          </div> */}
         </div>
       </div>
     </>

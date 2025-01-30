@@ -1,0 +1,17 @@
+.text-shadow-pop-tl {
+  animation: text-shadow-pop-tl 0.6s both;
+}
+
+@keyframes text-shadow-pop-tl {
+  0% {
+    text-shadow: 0 0 #20d1f5, 0 0 #20d1f5, 0 0 #20d1f5, 0 0 #20d1f5, 0 0 #20d1f5,
+      0 0 #20d1f5, 0 0 #20d1f5, 0 0 #20d1f5;
+    transform: translateX(0) translateY(0);
+  }
+  100% {
+    text-shadow: -1px -1px #20d1f5, -2px -2px #20d1f5, -3px -3px #20d1f5,
+      -4px -4px #20d1f5, -5px -5px #20d1f5, -6px -6px #20d1f5, -7px -7px #20d1f5,
+      -8px -8px #20d1f5;
+    transform: translateX(8px) translateY(8px);
+  }
+}

@@ -1,49 +1,33 @@
 import React from "react";
+import ModelsCanvas from "./canvas/Models.jsx";
+import work from "../assets/work.jpg";
 
 export default function Work() {
   return (
     <>
-      <div className="flex items-center justify-center py-[2rem]">
-        <div className="flex items-center w-full">
-          <hr className="flex-1 border-dashed border-2 mx-6" />
-          <span className="text-white text-[2.5rem]">Work Experience</span>
-          <hr className="flex-1 border-dashed border-2 mx-6" />
-        </div>
-      </div>
-      <div className="px-[2rem]">
-        <div className="text-white grid grid-cols-4 gap-[2rem] p-[2rem]">
-          <div className="bg-[#0d0d14] h-[50vh]">
-            {/* preview */}
-            <div className="bg-transparent">preview</div>
-            {/* desc */}
-            <div className="bg-transparent">work description</div>
-            {/* links */}
-            <div className="bg-transparent">links</div>
-          </div>
-          <div className="bg-[#0d0d14] h-[50vh]">
-            {/* preview */}
-            <div className="bg-transparent">preview</div>
-            {/* desc */}
-            <div className="bg-transparent">work description</div>
-            {/* links */}
-            <div className="bg-transparent">links</div>
-          </div>
-          <div className="bg-[#0d0d14] h-[50vh]">
-            {/* preview */}
-            <div className="bg-transparent">preview</div>
-            {/* desc */}
-            <div className="bg-transparent">work description</div>
-            {/* links */}
-            <div className="bg-transparent">links</div>
-          </div>
-          <div className="bg-[#0d0d14] h-[50vh]">
-            {/* preview */}
-            <div className="bg-transparent">preview</div>
-            {/* desc */}
-            <div className="bg-transparent">work description</div>
-            {/* links */}
-            <div className="bg-transparent">links</div>
-          </div>
+      <div
+        className="relative w-full h-screen"
+        style={{
+          backgroundImage: `url(${work})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          width: "100%",
+          overflow: "hidden",
+        }}
+      >
+        {/* Three Fiber Model as Background */}
+        <ModelsCanvas className="absolute top-0 left-0 w-full h-full" />
+
+        {/* Overlay Text */}
+        <div
+          className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 text-white text-[6rem] font-bold"
+          style={{
+            textShadow: "-1px 2px rgb(41 88 153)",
+            fontWeight: "500",
+          }}
+        >
+          Work & Projects
         </div>
       </div>
     </>

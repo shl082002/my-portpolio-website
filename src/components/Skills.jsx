@@ -49,7 +49,7 @@ export default function () {
   );
 
   return (
-    <>
+    <div className="">
       <div className="flex items-center justify-center py-[2rem]">
         <div className="flex items-center w-full">
           <hr className="flex-1 border-dashed border-2 mx-6" />
@@ -69,6 +69,55 @@ export default function () {
           ))}
         </div>
       </div>
-    </>
+
+      {/* ABOUT */}
+      <Carousel.Item>
+        <div className="text-black w-[92vw] h-[85vh] flex justify-between items-center">
+          {/* left-section */}
+          <div
+            className="w-full h-full"
+            style={{
+              backgroundImage: `url(${tech})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              backgroundRepeat: "no-repeat",
+            }}
+          >
+            {/* header */}
+            <div className="font-bold text-white flex flex-col justify-center items-center py-[3rem]">
+              <p className="text-[4rem] tracking-[1.8rem]">TECHNICAL</p>
+              <p className="text-[3.5rem] ml-[5rem] flex justify-center items-center  tracking-[2rem]">
+                SKILLs
+                <FaCircleArrowRight className="ml-[1rem] text-[3rem] mt-[0.5rem]" />
+              </p>
+            </div>
+            {/* body */}
+          </div>
+          {/* right-section */}
+          <div
+            className="w-full h-full flex flex-col justify-around items-center"
+            style={{
+              backgroundImage: `url(${about2})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              backgroundRepeat: "no-repeat",
+              width: "100%",
+              overflow: "hidden",
+            }}
+          >
+            <div className="grid grid-cols-6 px-[1rem]">
+              {skills.map((skill, index) => (
+                <SkillCard
+                  key={index}
+                  icon={skill.icon}
+                  name={skill.name}
+                  border={skill.border}
+                />
+              ))}
+            </div>
+          </div>
+        </div>
+      </Carousel.Item>
+    </div>
   );
 }

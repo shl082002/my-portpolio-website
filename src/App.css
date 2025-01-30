@@ -1,11 +1,11 @@
-* {
+.main-container {
   background-image: url("./assets/background2.jpg");
-  background-size: cover; 
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed; 
-  font-family: "Josefin Sans", serif;
+  background-attachment: fixed;
+  /* font-family: "Josefin Sans", serif;
   font-optical-sizing: auto;
   font-weight: 600;
-  font-style: normal;
+  font-style: normal; */
 }

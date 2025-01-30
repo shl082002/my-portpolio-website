@@ -17,10 +17,10 @@ export default function Home() {
   return (
     <div className="home-container px-[2rem] grid grid-cols-2">
       {/* left-section */}
-      <div className="flex flex-col">
+      <div className="flex justify-start items-center">
         {/* Introduction-text */}
         <motion.div
-          className="pl-[5rem] pt-[5rem] flex justify-center items-start flex-col"
+          className="pl-[4rem] flex justify-center items-start flex-col"
           initial={{ opacity: 0, y: 50 }} // Starting state: transparent and slightly below its position
           animate={{ opacity: 1, y: 0 }} // Ending state: fully visible and in place
           exit={{ opacity: 0, y: -50 }} // Exit state: fade out and slide upward
@@ -30,11 +30,11 @@ export default function Home() {
             ease: [0.25, 0.1, 0.25, 1], // Easing function (smooth effect)
           }}
         >
-          <p className="text-white font-semibold text-[3.5rem]">Hi,</p>
+          <p className="text-white font-semibold text-[2rem]">Hi,</p>
           <p className="text-[#20d1f5] font-bold text-[3.5rem]">
             I'm Sahil Verma
           </p>
-          <p className="text-[3rem] text-white">
+          <p className="text-[2.5rem] text-white">
             I'm a{" "}
             <span className="text-[#20d1f5] font-bold font-serif">
               {/* {"<Software"} {"Developer/>"} */}
@@ -59,15 +59,15 @@ export default function Home() {
               />
             </span>
           </p>
-          <div className="flex py-[2rem] gap-x-[1.5rem]">
+          {/* <div className="flex py-[2rem] gap-x-[1.5rem]">
             <FaLinkedin className="text-[3rem] text-[#20d1f5] hover:text-white" />
             <MdAttachEmail className="text-[3rem] text-[#20d1f5] hover:text-white" />
             <FaGithub className="text-[3rem] text-[#20d1f5] hover:text-white" />
             <SiFreelancer className="text-[3rem] text-[#20d1f5] hover:text-white" />
             <IoLogoWhatsapp className="text-[3rem] text-[#20d1f5] hover:text-white" />
             <AiFillInstagram className="text-[3rem] text-[#20d1f5] hover:text-white" />
-          </div>
-          <motion.div
+          </div> */}
+          {/* <motion.div
             className="py-[1rem]"
             initial={{ opacity: 0, scale: 0 }} // Starting state: transparent and slightly below its position
             animate={{ opacity: 1, scale: 1 }} // Ending state: fully visible and in place
@@ -86,11 +86,11 @@ export default function Home() {
             >
               Hire Me
             </button>
-          </motion.div>
+          </motion.div> */}
         </motion.div>
       </div>
       {/* right-section */}
-      <div>
+      <div className="flex justify-center items-center">
         {/* profile-image */}
         <motion.div
           className="flex justify-end items-center w-full h-full"
@@ -104,8 +104,16 @@ export default function Home() {
           <img
             src={profile_pic4}
             alt="Profile"
-            className="w-[80%] mt-[2rem] mr-[3rem]"
+            className="w-[84%] mt-[2rem] mr-[3rem]"
           />
+        </motion.div>
+        <motion.div className="text-white flex flex-col gap-y-[2rem] text-[2rem]">
+          <FaLinkedin className=" text-white hover:text-[#20d1f5]" />
+          <MdAttachEmail className=" text-white hover:text-[#20d1f5]" />
+          <FaGithub className=" text-white hover:text-[#20d1f5]" />
+          <SiFreelancer className=" text-white hover:text-[#20d1f5]" />
+          <IoLogoWhatsapp className=" text-white hover:text-[#20d1f5]" />
+          <AiFillInstagram className=" text-white hover:text-[#20d1f5]" />
         </motion.div>
       </div>
     </div>
